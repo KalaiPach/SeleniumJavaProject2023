@@ -2,6 +2,7 @@ package day06;
 
 import java.sql.Driver;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.DataProvider;
@@ -23,8 +24,10 @@ public class program03 {
 	@Test(dataProvider = "login")
 	public void logIn(String username, String pwd) {
 	
-	 
-		System.out.println("UserName"+"....."+"Password");
+		driver = new ChromeDriver();
+		driver.get("https://demo.guru99.com/V1/index.php");
+		driver.findElement(By.name("uid")).sendKeys("username");
+		driver.findElement(By.name("password")).sendKeys("pwds");
 	}
 	
 }
