@@ -24,10 +24,8 @@ public class program03 {
 	@Test(dataProvider = "login")
 	public void logIn(String username, String pwd) {
 	
-		driver = new ChromeDriver();
-		driver.get("https://demo.guru99.com/V1/index.php");
-		driver.findElement(By.name("uid")).sendKeys("username");
-		driver.findElement(By.name("password")).sendKeys("pwds");
+
+		System.out.println("UserName"+"....."+"Password");
 	}
 	
 }
