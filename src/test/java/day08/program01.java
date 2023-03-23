@@ -28,6 +28,7 @@ public class program01 {
 			System.out.println(format.formatCellValue(sh.getRow(0).getCell(1)));
 			System.out.println(format.formatCellValue(sh.getRow(0).getCell(2)));
 			System.out.println(format.formatCellValue(sh.getRow(0).getCell(3)));
+			System.out.println(format.formatCellValue(sh.getRow(1).getCell(1)));
 			
 			System.out.println(sh.getLastRowNum());
 			System.out.println(sh.getRow(0).getLastCellNum());
